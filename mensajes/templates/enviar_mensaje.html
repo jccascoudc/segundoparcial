@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Enviar mensajes - My Website{% endblock %}
+
+{% block header %}
+    <h1>Enviar mensajes</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}

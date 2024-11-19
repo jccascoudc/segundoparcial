@@ -1,0 +1,1 @@
+web: gunicorn TableroMensajes.wsgi --log-file -
